@@ -69,7 +69,10 @@ The SCADA system is structured into three main levels:
 - SCADA training and demonstration systems
 
 ## 📁 Project Structure
-[Schematic drawing-Layout2.pdf](https://github.com/user-attachments/files/24421813/Schematic.drawing-Layout2.pdf)
+
+
+<img width="735" height="676" alt="image" src="https://github.com/user-attachments/assets/16ebff75-8ce2-49a7-accb-96b40e5b7d2a" />
+
 
 
 ## 👨‍💻 Team Members
