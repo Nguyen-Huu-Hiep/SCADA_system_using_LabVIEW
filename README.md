@@ -1,33 +1,91 @@
-# SCADA_system_using_LabVIEW
-Introduction
-The SCADA Solar Rooftop System project aims to build a smart monitoring and control system for rooftop solar power using SCADA technology.
-It integrates hardware (PV, Inverter, Battery, Data Logger, Raspberry Pi) and software (SCADA/HMI, Cloud) to monitor, control, and optimize solar energy operations.
+# SCADA System for Solar Power Generation using LabVIEW
 
-Key Benefits:
+## 📌 Overview
+This project focuses on the design and implementation of a **SCADA (Supervisory Control and Data Acquisition) system** for an **off-grid rooftop solar power generation system** using **LabVIEW**.  
+The system enables real-time monitoring, data acquisition, visualization, logging, and supervisory control to improve operational efficiency, reliability, and system performance.
 
-Reduce electricity costs.
-Utilize clean & renewable energy.
-Real-time monitoring and predictive maintenance.
-Increase energy independence for households and businesses.
-System Architecture
-The system is divided into 3 SCADA levels: scada
+## 🎯 Objectives
+- Monitor real-time electrical parameters of a solar power system
+- Acquire data from field devices via industrial communication protocols
+- Visualize system status through an intuitive HMI developed in LabVIEW
+- Log historical data for analysis and performance evaluation
+- Support supervisory control to enhance system reliability
 
-Field Level
+## 🏗️ System Architecture
+The SCADA system is structured into three main levels:
 
-PV Array (solar panels)
-Combiner Box, Fuse, AC Breaker
-Battery Bank (energy storage)
-Weather Station (measures irradiance, temperature, wind, humidity)
-Inverter (DC → AC conversion)
-Charge Controller
-Control Level
+### 1. Field Level
+- Solar PV panels
+- Hybrid / Off-grid inverter
+- Battery Energy Storage System (BESS)
+- Weather station (PV Met 75)
+- Smart power meters (SDM630, SDM120)
+- Sensors for voltage, current, power, temperature, and solar radiation
 
-Inverter (PWM, MPPT control, voltage/current monitoring, SCADA communication)
-Charge Controller (controls charging process)
-Data Logger (can trigger safety cut-offs)
-Supervisory Level
+### 2. Control Level
+- RTU / Modbus RTU to Modbus TCP Converter
+- Raspberry Pi used as Data Logger / Data Manager
+- Ethernet Switch & Router
+- SMA Communication Gateway
 
-Plant SCADA (Server + HMI)
-Raspberry Pi & Data Logger (data acquisition and transmission)
-Dashboard (real-time monitoring, alarms, performance analysis)
+### 3. Monitoring Level
+- SCADA Server / Personal Computer
+- LabVIEW-based HMI
+- Real-time charts, alarms, and control panels
+
+## 🔌 Communication Protocols
+- **Modbus RTU (RS485)** for field devices
+- **Modbus TCP/IP** for Ethernet-based communication
+- Data conversion between RTU and TCP using protocol converters
+
+## 🖥️ SCADA Features
+- Real-time monitoring of voltage, current, power, energy, and system status
+- Graphical visualization (charts, indicators, dashboards)
+- Alarm and fault indication
+- Data logging for historical analysis
+- Remote supervisory control
+- User-friendly HMI developed in LabVIEW
+
+## 🛠️ Tools & Technologies
+- **Software**:  
+  - LabVIEW  
+- **Hardware**:  
+  - Solar PV Panels  
+  - Hybrid / Off-grid Inverter  
+  - PV Met 75 Weather Station  
+  - SDM630 / SDM120 Power Meters  
+  - Raspberry Pi 3  
+
+  - RTU/TCP Converter  
+- **Communication**:  
+  - Modbus RTU  
+  - Modbus TCP/IP  
+
+## 📊 Applications
+- Rooftop solar power monitoring
+- Off-grid solar energy systems
+- Smart energy management
+- Educational and research purposes
+- SCADA training and demonstration systems
+
+## 📁 Project Structure
+[Schematic drawing-Layout2.pdf](https://github.com/user-attachments/files/24421813/Schematic.drawing-Layout2.pdf)
+
+
+## 👨‍💻 Team Members
+- Nguyễn Hữu Hiệp  
+- Nguyễn Minh Ngọc Huy  
+- Lê Công Khoa  
+- Quý Tâm Anh  
+
+## 👨‍🏫 Supervisor
+- **Dr. Lê Quốc Huy**  
+Faculty of Advanced Science and Technology  
+University of Science and Technology – The University of Danang
+
+## 📅 Date
+- September 2025
+
+## 📜 License
+This project is developed for **academic and educational purposes**.
 
